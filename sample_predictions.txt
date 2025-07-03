@@ -1,0 +1,17 @@
+SAMPLE REVIEW PREDICTIONS
+
+Review 1: This is the best purchase I've ever made!
+Prediction: positive
+
+Review 2: Completely waste of money, very disappointed.
+Prediction: negative
+
+Review 3: Works fine, but expected better quality.
+Prediction: negative
+
+Review 4: Absolutely love it, exceeded my expectations!
+Prediction: positive
+
+Review 5: Terrible product, broke in two days.
+Prediction: negative
+
