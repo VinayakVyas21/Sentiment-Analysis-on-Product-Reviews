@@ -312,6 +312,18 @@ best_model_name = 'Logistic Regression' if lr_results['f1'] > rf_results['f1'] e
 best_model = lr_model if lr_results['f1'] > rf_results['f1'] else rf_model
 print(f"\nBest model based on F1 score: {best_model_name}")
 
+# Save the best model and vectorizer for later use
+import pickle
+print("\nSaving model and vectorizer...")
+try:
+    with open('best_model.pkl', 'wb') as f:
+        pickle.dump(best_model, f)
+    with open('vectorizer.pkl', 'wb') as f:
+        pickle.dump(vectorizer, f)
+    print("Model and vectorizer saved successfully.")
+except Exception as e:
+    print(f"Error saving model and vectorizer: {e}")
+
 # Predict on sample reviews
 print("\n" + "="*50)
 print("PREDICTIONS ON SAMPLE REVIEWS")
